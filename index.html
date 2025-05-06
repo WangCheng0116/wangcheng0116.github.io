@@ -1,248 +1,321 @@
 <!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Cheng Wang's Homepage</title>
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <title>Cheng Wang's Homepage</title>
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  
+  <meta name="author" content="Cheng Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    ul {
+        list-style-type: disc;
+        padding: 20;
+    }
+    ul li {
+        padding: 2px;
+    }
 
+    .tag {
+      display: inline-block;
+      background-color: #0073e6;
+      color: rgb(33, 32, 32);
+      padding: 3px 7px;
+      border-radius: 15px;
+      font-size: 0.8em;
+      margin-right: 5px;
+    }
 
-    <meta name="author" content="Cheng WANG">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    .tag-nlp {
+      background-color: #ffc8dd;
+    }
+
+    .tag-trust {
+      background-color: #cdb4db;
+    }
+
+    .tag-reas {
+      background-color: #bde0fe;
+    }
+
+    .tag-adv {
+      background-color: #ff6b6b; /* Red for adversarial attack */
+    }
+
+    .tag-inter {
+      background-color: #ffafcc; /* Light pink for interpretability */
+    }
+
+    .tag-sent {
+      background-color: #b8f2e6; /* Light green for sentence embeddings */
+    }
+
+    .year-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
     
-  </head>
+    heading {
+      font-size: 24px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Cheng WANG
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="name" style="text-align: center;">
+                Cheng Wang
               </p>
-              <p>I'm a third-year undergraduate student from <a href="https://www.nus.edu.sg/">National University of Singapore (NUS)</a>. I am fortunate to work closely with <a href="https://wangywust.github.io/">Prof. Yiwei Wang</a>, <a href="https://vanoracai.github.io/">Prof. Yujun Cai</a>, <a href="https://bhooi.github.io/">Prof. Bryan Hooi</a>, and <a href="https://web.cs.ucla.edu/~kwchang/">Prof. Kai-Wei Chang</a>. I am broadly interested in Natural Language Processing (NLP), with a particular focus on Trustworthy NLP and Reasoning in NLP. 
+              <p>I'm a third-year undergraduate student from <a href="https://www.nus.edu.sg/">National University of Singapore (NUS)</a>. I am fortunate to work closely with <a href="https://wangywust.github.io/">Prof. Yiwei Wang</a>, <a href="https://vanoracai.github.io/">Prof. Yujun Cai</a>, <a href="https://bhooi.github.io/">Prof. Bryan Hooi</a>, and <a href="https://web.cs.ucla.edu/~kwchang/">Prof. Kai-Wei Chang</a>. I am broadly interested in Natural Language Processing (NLP), with a particular focus on Trustworthy NLP and Reasoning in NLP.
               </p>
-                <p style="text-align:center">
-                  <a href="mailto:wangcheng@u.nus.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/wangchengsg/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/WangCheng0116">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <div style="width: min(230px, 40vw); height: min(230px, 40vw); margin: 0 auto;">
-                  <a href="images/me.jpg">
-                    <img style="width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                                object-position: center center;
-                                border-radius: 50%;
-                                display: block;" 
-                        alt="profile photo" 
-                        src="images/me.jpg" 
-                        class="hoverZoomLink">
-                  </a>
-                </div>
-              </td>
-            </tr>
+              <p style="text-align:center">
+                <a href="mailto:wangcheng@u.nus.edu">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/wangchengsg/">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/WangCheng0116">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%; width:40%; max-width:40%">
+              <div style="width: min(230px, 40vw); height: min(230px, 40vw); margin: 0 auto;">
+                <a href="images/me.jpg">
+                  <img style="width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                              object-position: center center;
+                              border-radius: 50%;
+                              display: block;" 
+                      alt="profile photo" 
+                      src="images/me.jpg" 
+                      class="hoverZoomLink">
+                </a>
+              </div>
+            </td>            
+          </tr>
+        </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="width:100%;vertical-align:middle">
+            <heading>🔥 News</heading>
+          </td>
+        </tr>
+        </tbody></table>
 
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table>
+          <tbody>
+              <tr>
+                  <td>
+                      <div>
+                          <ul>
+                              <li>[2025.04] Our survey on LRMs Safety is on arxiv now, check out the <a href="https://arxiv.org/abs/2504.17704">paper</a> and <a href="https://github.com/WangCheng0116/Awesome-LRMs-Safety">repo</a>!</li>
+                              <li>[2025.01] Our paper is accepted to <strong>NAACL 2025</strong> Main Conference.</li>
+                              <li>[2025.01] I started my internship at Tiktok as an Algorithm Engineer Intern.</li>
+                              <li>[2024.11] Our paper is accepted to <strong>COLING 2025</strong>.</li>
+                          </ul>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>News</h2>
+              <heading>📑 Publications</heading>
               <p>
-                [<strong>2025.04</strong>] Our survey on LRMs Safety is on arxiv now, check out the <a href="https://arxiv.org/abs/2504.17704">paper</a> and <a href="https://github.com/WangCheng0116/Awesome-LRMs-Safety">repo</a>!<br>
+                <sup>*</sup> denotes equal contribution, see full list in <a href="https://scholar.google.com/">Google Scholar</a>.
               </p>
-              <p>
-                [<strong>2025.01</strong>] Our paper is accepted to NAACL 2025 Main Conference.<br>
-              </p>
-              <p>
-                [<strong>2025.01</strong>] I started my internship at Tiktok as an Algorithm Engineer Intern.
-              </p>
-              <p>
-                [<strong>2024.11</strong>] Our paper is accepted to COLING 2025.<br>
-              </p>
-              
+            </td>
+          </tr>
+        </tbody></table>
+    
+        <div class="year-title">2025</div>
+
+        <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/timeline.png" alt="survey" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>Safety in Large Reasoning Models: A Survey</papertitle></div>
+              <div class="tags" data-tags="trust,reas"></div>
+              <strong>Cheng Wang<sup>*</sup></strong>, <a href="https://yueliu1999.github.io/">Yue Liu<sup>*</sup></a>, <a href="https://byronbbl.github.io/">Baolong Bi</a>, <a href="https://bladedancer957.github.io/">Duzheng Zhang</a>, <a href="https://scholar.google.com/citations?user=wmaFBB8AAAAJ&hl=zh-CN">Zhongzhi Li</a>, <a href="https://scholar.google.com/citations?user=beNNywsAAAAJ&hl=zh-CN">Junfeng Fang</a>
+              <br>
+              <em>Under Review</em>, 2025
+              <br>
+              <a href="https://arxiv.org/pdf/2504.17704">Paper</a> / <a href="https://github.com/WangCheng0116/Awesome-LRMs-Safety">GitHub</a>
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sent_emb.png" alt="sentence embeddings" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>Beyond the Last Layer: Improving Sentence Embeddings Elicited from LLMs through Contrastive Layer Information Fusion</papertitle></div>
+              <div class="tags" data-tags="inter,sent"></div>
+              <strong>Cheng Wang</strong>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://violetpeng.github.io/">Nanyun Peng</a>, <a href="https://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
+              <br>
+              <em>Under Review</em>, 2025
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/DIGA.png" alt="DIGA" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack</papertitle></div>
+              <div class="tags" data-tags="adv,trust"></div>
+              <strong>Cheng Wang</strong>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>
+              <br>
+              <em><strong>NAACL 2025</strong> Main Track</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2503.21315">Paper</a>
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/con-recall.jpg" alt="con-recall" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>Con-ReCall: Detecting Pre-training Data in LLMs via Contrastive Decoding</papertitle></div>
+              <div class="tags" data-tags="adv,trust"></div>
+              <strong>Cheng Wang</strong>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://violetpeng.github.io/">Nanyun Peng</a>, <a href="https://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
+              <br>
+              <em><strong>COLING 2025</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/2409.03363.pdf">Paper</a>
+              <br>
             </td>
           </tr>
         </tbody></table>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="width:100%;vertical-align:middle">
+            <heading>🎓 Education</heading>
+          </td>
+        </tr>
+      </tbody></table>
 
-        <!-- Research -->
-        
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle;">
+            <img src="images/NUS.svg" alt="nus" width="150">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <strong>National University of Singapore (NUS)</strong>
+            <br>
+            Period: 2022 - Present
+            <br>
+            Major: Computer Science & Math
+          </td>
+        </tr>
+      </tbody></table>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="width:100%;vertical-align:middle">
+            <heading>💼 Professional & Industry Experience</heading>
+          </td>
+        </tr>
+      </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <strong>Tiktok</strong> | Singapore
+            <br>
+            <em>Algorithm Engineer Intern</em>
+            <br>
+            Period: Jan 2025 - June 2025
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <strong>National University of Singapore</strong> | Singapore
+            <br>
+            <em>Teaching Assistant, Introduction to AI and Machine Learning</em>
+            <br>
+            Period: Jan 2024 - May 2024
+          </td>
+        </tr>
+
+      </tbody></table>
+
+      <table>
+        <tbody>
             <tr>
-              <td style="padding:20px;width:20%;vertical-align:middle">
-                <div style="max-width:200px;">
-                  <img src="images/timeline.png" 
-                       alt="sent_emb" 
-                       style="width:100%;
-                              height:auto;
-                              display:block;"
-                  >
-                </div>
-              </td>
-            
-              <td width="75%" valign="middle">      
-                <span class="papertitle">Safety in Large Reasoning Models: A Survey</span>
-              <br>
-              <u>Cheng Wang</u>, <a href="https://yueliu1999.github.io/">Yue Liu</a>, <a href="https://byronbbl.github.io/">Baolong Bi</a> , <a href="https://bladedancer957.github.io/">Duzheng Zhang</a>, <a href="https://scholar.google.com/citations?user=wmaFBB8AAAAJ&hl=zh-CN">Zhongzhi Li</a>, <a href="https://scholar.google.com/citations?user=beNNywsAAAAJ&hl=zh-CN">Junfeng Fang</a>
-              <br>
-              [<a href="https://arxiv.org/pdf/2504.17704">pdf</a>] 
-              <br>
-              <br>
-              <em>Under Review</em> 
-              <br>
-            </td>
-           </tr>
-
-           <tr style="height: 20px;">
-            <td></td>
-          </tr>
-            
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div style="max-width:200px;">
-                    <img src="images/sent_emb.png" 
-                         alt="DIGA" 
-                         style="width:100%;
-                                height:auto;
-                                display:block;"
-                    >
-                  </div>
+                <td>
+                  <a href='https://clustrmaps.com/site/1c5sz' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=ij-ZAiC531qZ9RzSIODyxnMEewbok1-0DWh7jQ_I4LI&co=2d78ad&ct=ffffff'/></a>
                 </td>
-
-            <td width="75%" valign="middle">      
-                <span class="papertitle">Beyond the Last Layer: Improving Sentence Embeddings Elicited from LLMs through Contrastive Layer Information Fusion</span>
-              <br>
-              <u>Cheng Wang</u>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://violetpeng.github.io/">Nanyun Peng</a>, <a href="https://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
-              <br>
-              <br>
-              <em>Under Review</em> 
-              <br>
-            </td>
-           </tr>
-
-           <tr style="height: 20px;">
-            <td></td>
-          </tr>
-            
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div style="max-width:200px;">
-                    <img src="images/DIGA.png" 
-                         alt="DIGA" 
-                         style="width:100%;
-                                height:auto;
-                                display:block;"
-                    >
-                  </div>
-                </td>
-
-                
-                
-              <td width="75%" valign="middle">      
-                  <span class="papertitle">Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack</span>
-                <br>
-                <u>Cheng Wang</u>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>
-                <br>
-                [<a href="https://arxiv.org/pdf/2503.21315">pdf</a>] 
-                <br>
-                <br>
-                <em><i>NAACL 2025 Main Track</i></em>
-                <br>
-              </td>
-             </tr>
-
-             <tr style="height: 20px;">
-              <td></td>
-
             </tr>
-             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div style="max-width:200px;">
-                  <img src="images/con-recall.jpg" 
-                       alt="con-recall" 
-                       style="width:100%;
-                              height:auto;
-                              display:block;"
-                  >
-                </div>
-              </td>
+        </tbody>
+      </table>
 
-              <td width="75%" valign="middle">
-                  <span class="papertitle">Con-ReCall: Detecting Pre-training Data in LLMs via Contrastive Decoding</span>
-                <br>
-                <u>Cheng Wang</u>, <a href="https://wangywust.github.io/">Yiwei Wang</a>, <a href="https://bhooi.github.io/">Bryan Hooi</a>, <a href="https://vanoracai.github.io/">Yujun Cai</a>, <a href="https://violetpeng.github.io/">Nanyun Peng</a>, <a href="https://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
-                <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template is from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. Last update: Apr 2025
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 
-                
-                
-                [<a href="https://arxiv.org/pdf/2409.03363.pdf">pdf</a>] 
-                <br>
-                <br>
-                <em><i>COLING 2025</i></em> 
-              </td>
-             </tr>
-             <br>
-
-             
-
-          </tbody></table>
-
-
-          <br>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Professional & Industry Experience</h2>
-                <p>
-                  <strong>Tiktok</strong> | Singapore<br>
-                  <em>Algorithm Engineer Intern</em> |  Jan 2025 - June 2025<br>
-                </p>
+  <!-- Definitions for tags -->
+  <script>
+    // Predefined tags with names and classes
+    const tagsMap = {
+      'nlp': { name: 'NLP', class: 'tag-nlp' },
+      'trust': { name: 'Trustworthy AI', class: 'tag-trust' },
+      'reas': { name: 'Large Reasoning Models', class: 'tag-reas' },
+      'adv': { name: 'Adversarial Attack', class: 'tag-adv' },
+      'inter': { name: 'Interpretability', class: 'tag-inter' },
+      'sent': { name: 'Sentence Embeddings', class: 'tag-sent' }
+    };
   
-                <p>
-                  <strong>National Universiyt of Singapore</strong> | Singapore<br>
-                  <em>Teaching Assistant, Introduction to AI and Machine Learning</em> |  Jan 2024 - May 2024 (expected)<br>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <body>
-            <a href='https://clustrmaps.com/site/1c5sz'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=ij-ZAiC531qZ9RzSIODyxnMEewbok1-0DWh7jQ_I4LI&co=2d78ad&ct=ffffff'/></a>
-          </body>
-            
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-            <tbody>
-              <tr>
-                <td style="padding:20px 0">
-                  <hr style="clear:both"/>
-                  
-                    <p style="text-align:right;font-size:small;margin-right:20px;">
-                      Template is from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
-                      <br>
-                      Last update: Apr 2025
-                    </p>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>          
-        </td>
-      </tr>
-    </table>
-  </body>
+    // Render tags with appropriate CSS classes
+    document.querySelectorAll('.tags').forEach(tagDiv => {
+      const tagAbbreviations = tagDiv.getAttribute('data-tags').split(',');
+      tagAbbreviations.forEach(abbreviation => {
+        if (tagsMap[abbreviation]) {
+          const tagElement = document.createElement('span');
+          tagElement.classList.add('tag', tagsMap[abbreviation].class);
+          tagElement.textContent = tagsMap[abbreviation].name;
+          tagDiv.appendChild(tagElement);
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
