@@ -58,6 +58,18 @@
       background-color: #b8f2e6; /* Light green for sentence embeddings */
     }
 
+    .tag-hallu {
+      background-color: #ffbf69; /* Orange for hallucination */
+    }
+
+    .tag-vlm {
+      background-color: #a0c4ff; /* Blue for vision-language models */
+    }
+
+    .tag-alm {
+      background-color: #9bf6ff; /* Cyan for audio-language models */
+    }
+
     .year-title {
       font-size: 18px;
       font-weight: bold;
@@ -91,6 +103,7 @@
                 <a href="https://www.linkedin.com/in/wangchengsg/">LinkedIn</a> &nbsp/&nbsp
                 <a href="https://github.com/WangCheng0116">Github</a>
               </p>
+              <p style="color: red;">Looking for Fall 2026 PhD opportunities on Trustworthy AI and LLMs topics in general, feel free to contact!</p>
             </td>
             <td style="padding:2.5%; width:40%; max-width:40%">
               <div style="width: min(230px, 40vw); height: min(230px, 40vw); margin: 0 auto;">
@@ -106,9 +119,10 @@
                       class="hoverZoomLink">
                 </a>
               </div>
-            </td>            
+            </td>   
           </tr>
         </tbody></table>
+
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -152,12 +166,44 @@
           
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/MCR.png" alt="survey" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>When Audio and Text Disagree: Benchmarking Text Bias in Large Audio-Language Models under Cross-Modal Inconsistencies</papertitle></div>
+              <div class="tags" data-tags="adv,alm"></div>
+              <strong>Cheng Wang</strong>, Gelei Deng, Xianglin Yang, Tianwei Zhang
+
+              <br>
+              <em>Under Review</em>, 2025
+              <br>
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/vlm-hallu.png" alt="survey" width="160">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <div style="color: cornflowerblue;"><papertitle>Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation</papertitle></div>
+              <div class="tags" data-tags="hallu,vlm"></div>
+              Xingyu Zhu, Junfeng Fang, Xinfeng Li, <strong>Cheng Wang</strong>, Shuo Wang, Beier Zhu, Xiangnan He 
+
+              <br>
+              <em>Under Review</em>, 2025
+              <br>
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/guard-vl.png" alt="survey" width="160">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <div style="color: cornflowerblue;"><papertitle>GuardReasoner-VL: Safeguarding VLMs via Reinforced Reasoning</papertitle></div>
               <div class="tags" data-tags="trust,reas"></div>
-              Yue Liu,Shengfang Zhai, Mingzhe Du, Yulin Chen, Tri Cao, Hongcheng Gao, <strong>Cheng Wang</strong>, Xinfeng Li, Kun Wang, Junfeng Fang, Jiaheng Zhang, Bryan Hooi
+              Yue Liu, Shengfang Zhai, Mingzhe Du, Yulin Chen, Tri Cao, Hongcheng Gao, <strong>Cheng Wang</strong>, Xinfeng Li, Kun Wang, Junfeng Fang, Jiaheng Zhang, Bryan Hooi
               <br>
               <em>Under Review</em>, 2025
               <br>
@@ -316,7 +362,10 @@
       'reas': { name: 'Large Reasoning Models', class: 'tag-reas' },
       'adv': { name: 'Adversarial Attack', class: 'tag-adv' },
       'inter': { name: 'Interpretability', class: 'tag-inter' },
-      'sent': { name: 'Sentence Embeddings', class: 'tag-sent' }
+      'sent': { name: 'Sentence Embeddings', class: 'tag-sent' },
+      'hallu': { name: 'Hallucination', class: 'tag-hallu' },
+      'vlm': { name: 'Vision-Language Models', class: 'tag-vlm' },
+      'alm': { name: 'Audio-Language Models', class: 'tag-alm' }
     };
   
     // Render tags with appropriate CSS classes
